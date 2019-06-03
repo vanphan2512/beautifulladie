@@ -1,0 +1,16 @@
+.about-us .title {
+  color: #333333;
+  padding: 0px 0px 15px 0px;
+  margin: 0px 0px 15px 0px;
+  border-bottom: 1px solid #e5e5e5;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: normal; }
+
+.about-us .desc p {
+  line-height: 24px;
+  font-size: 14px; }
+
+.about-us .desc .question ul li {
+  margin-bottom: 0.4em; }

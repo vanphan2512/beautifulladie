@@ -1,0 +1,77 @@
+.contact-policy {
+  padding-top: 30px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 30px; }
+  .contact-policy .policy-item {
+    display: block;
+    padding: 10px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .contact-policy .policy-item:hover {
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+      transform: translateY(-3px); }
+    .contact-policy .policy-item .image {
+      text-align: center;
+      width: 25%;
+      float: left;
+      min-height: 1px; }
+    .contact-policy .policy-item .content {
+      width: 75%;
+      padding-left: 15px;
+      position: relative;
+      border-left: 2px solid #ffb0f8;
+      float: left; }
+      .contact-policy .policy-item .content h3 {
+        color: #333333;
+        margin: 0px;
+        line-height: 20px;
+        font-size: 16px; }
+      .contact-policy .policy-item .content span {
+        color: #333333;
+        font-size: 14px; }
+
+.contact {
+  margin-top: 30px; }
+  .contact .contact-title {
+    color: #333333;
+    padding: 0px 0px 15px 0px;
+    margin: 0px 0px 15px 0px;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: normal;
+    font-weight: normal; }
+  .contact .form-vertical {
+    margin-bottom: 15px; }
+    .contact .form-vertical .contact-form .form-row .form-group label[for] {
+      cursor: pointer; }
+    .contact .form-vertical .contact-form .form-row .form-group input {
+      border: 1px solid #e5e5e5;
+      max-width: 100%;
+      padding: 8px 10px;
+      border-radius: 3px;
+      margin-bottom: 10px; }
+    .contact .form-vertical .contact-form .form-row .form-group .hidden-label {
+      position: absolute;
+      height: 0;
+      width: 0;
+      margin-bottom: 0;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px); }
+    .contact .form-vertical .contact-form .form-row .form-group .input-full {
+      width: 100%; }
+    .contact .form-vertical .contact-form .form-row .form-group.message {
+      width: 100%;
+      padding: 0 6px; }
+    .contact .form-vertical .contact-form .form-row .btn-submit {
+      margin: auto;
+      border-radius: 25px;
+      padding: 10px 25px;
+      color: #fff;
+      background: linear-gradient(to right, #9ea3ff, #ffb0f8) border-box;
+      opacity: 0.7;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .contact .form-vertical .contact-form .form-row .btn-submit:hover {
+        opacity: 1; }
