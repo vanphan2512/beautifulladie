@@ -1,1 +1,5 @@
-project.beautifulladies.com
+
+project.beautifulladies.com                    IN      A
+project.beautifulladies.com              3592    IN      CNAME   vanphan2512.github.io.
+vanphan2512.github.io.      43192   IN      CNAME   < GITHUB-PAGES-SERVER >.
+< GITHUB-PAGES-SERVER >.      22      IN      A       199.27.XX.XXX
