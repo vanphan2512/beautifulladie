@@ -6,26 +6,116 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- Font Awesome Stylesheets -->
-    <link rel="stylesheet" href="vender/font-awesome/css/font-awesome.css">
-    <!-- Aos Stylesheets -->
-    <link href="vender/aos/css/aos.css" rel="stylesheet">
-     <!-- Owl Stylesheets -->
-    <link rel="stylesheet" href="vender/owlcarousel/css/default.owl.carousel.css">
-    <link rel="stylesheet" href="vender/owlcarousel/css/owl.theme.css">
-    <link rel="stylesheet" href="vender/owlcarousel/css/owl.carousel.css" />
     <!-- Main Stylesheets -->
     <link rel="stylesheet" href="css/index.css">
-
-    
 
     <title>Beautiful Ladies</title>
 
 </head>
 
 <body>
+    <div class="overlay"></div>
+    <!--.login-popup-->
+    <div class="main-popup">
+        <div class="popup-header">
+            <div id="popup-close-button" class="popup-close-button">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <ul>
+                <li><a href="#" id="sign-in" class="tab-sign-in">Sign In</a></li>
+                <li><a href="#" id="register" class="tab-register">Register</a></li>
+            </ul>
+        </div>
+        <!--.popup-header-->
+        <div class="popup-content">
+            <form action="#" class="sign-in">
+                <div class="form-group form-group-input inputMail">
+                    <input type="email" class="form-control input-text-control" id="inputEmail"
+                        aria-describedby="emailHelp" placeholder="Enter email" />
+                    <span class="focus-input-control" data-placeholder="">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="form-group form-group-input inputPassWord">
+                    <input type="password" class="form-control  input-text-control" id="inputPassword"
+                        placeholder="Enter password" />
+                    <span class="focus-input-control" data-placeholder="">
+                        <i class="fa fa-key" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="form-group form-check form-group-checkbox">
+                    <input type="checkbox" class="form-check-input" id="inputRemember" />
+                    <label class="form-check-label" for="inputRemember">Remember me</label>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" class="btn btn-submit">Login</button>
+                </div>
+            </form>
+
+            <form action="#" class="register">
+
+                <div class="form-group form-group-input form-group-input-name">
+                    <input type="text" class="form-control input-text-control" placeholder="First name" />
+                    <span class="focus-input-control" data-placeholder=""></span>
+                </div>
+
+                <div class="form-group form-group-input">
+                    <input type="text" class="form-control input-text-control" placeholder="Last name" />
+                    <span class="focus-input-control" data-placeholder=""></span>
+                </div>
+
+                <div class="form-group form-group-input-gender">
+                    <div class="form-group">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="male" name="gender" class="custom-control-input">
+                            <label class="custom-control-label lbl-title" for="male">Male</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="female" name="gender" class="custom-control-input">
+                            <label class="custom-control-label lbl-title" for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group form-group-input">
+                    <input type="text" class="form-control input-text-control" placeholder="Address" />
+                    <span class="focus-input-control" data-placeholder=""></span>
+                </div>
+
+                <div class="form-group form-group-input">
+                    <input type="number" class="form-control input-text-control" placeholder="Phone" />
+                    <span class="focus-input-control" data-placeholder=""></span>
+                </div>
+
+                <div class="form-group form-group-input">
+                    <input type="email" class="form-control input-text-control" placeholder="Email" />
+                    <span class="focus-input-control" data-placeholder=""></span>
+                </div>
+
+                <div class="form-group form-group-input">
+                    <input type="password" class="form-control input-text-control" placeholder="Password" />
+                    <span class="focus-input-control" data-placeholder=""></span>
+                </div>
+                <div class="form-group form-group-input">
+                    <input type="password" class="form-control input-text-control" placeholder="Confirm password" />
+                    <span class="focus-input-control" data-placeholder=""></span>
+                </div>
+
+                <div class="form-group form-check form-group-checkbox">
+                    <input type="checkbox" class="form-check-input" id="inputaccept" />
+                    <label class="form-check-label" for="inputaccept">accept the Terms of Use & Privacy Policy</label>
+                </div>
+
+                <div class="form-submit">
+                    <button type="submit" class="btn btn-submit">Register</button>
+                </div>
+            </form>
+        </div>
+        <!--.popup-content-->
+    </div>
+    <!--.main-popup-->
+
+
 
     <header id="header" class="header ">
         <div class="header-top">
@@ -54,7 +144,7 @@
                                 </li>
                                 <span class="font-line">|</span>
                                 <li>
-                                    <a href="login.html">Đăng nhập</a>
+                                    <a class="login-trigger" href="javascript:void(0)">Đăng nhập</a>
                                 </li>
                                 <span class="font-line">|</span>
                                 <li>
@@ -291,7 +381,8 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-sm-12 col-md-12 col-lg-3">
+                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                        class="col-sm-12 col-md-12 col-lg-3">
                         <div class="logo">
                             <a href="#">
                                 <span>Beautiful Ladies</span>
@@ -517,8 +608,8 @@
 
     </header>
 
-    <section   data-aos="fade-up" data-aos-duration="3000" class="main-slider">
-        <div id="owl-home-main-slider"  class="owl-home-main-slider">
+    <section data-aos="fade-up" data-aos-duration="3000" class="main-slider">
+        <div id="owl-home-main-slider" class="owl-home-main-slider">
             <div class="owl-item">
                 <div class="item">
                     <div class="item-image">
@@ -561,13 +652,15 @@
                             <img src="images/icon/icon-title.png" />
                             <span class="line-right"></span>
                         </div>
-                        <h3  data-aos="fade-right" class="descript-body text-center">Với mục tiêu cung cấp những sản phẩm có chất lượng cao và
+                        <h3 data-aos="fade-right" class="descript-body text-center">Với mục tiêu cung cấp những sản phẩm
+                            có chất lượng cao và
                             an toàn theo tiêu chuẩn quốc tế, đáp ứng nhu cầu chăm sóc làm đẹp hàng ngày của người tiêu
                             dùng lẫn hỗ trợ điều trị da dành cho các chuyên gia y tế và sắc đẹp. Suplo Beauty cũng cấp
                             mỹ phẩm từ các thương hiệu nổi tiếng:</h3>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="col-sm-12 col-md-12 col-lg-12 home-brand-slider">
+                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                    class="col-sm-12 col-md-12 col-lg-12 home-brand-slider">
                     <div id="home-brand-slider">
                         <div class="owl-item">
                             <div class="item">
@@ -667,7 +760,7 @@
                             <span class="line-right"></span>
                         </div>
                     </div>
-                    <div  data-aos="fade-right" class="home-discount">
+                    <div data-aos="fade-right" class="home-discount">
                         <span class="remain-times">Còn lại :</span>
                         <div class="countdown-days">
                             <div class="days">215</div>
@@ -936,7 +1029,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div  data-aos="fade-up-left" class="col-banner-img">
+                        <div data-aos="fade-up-left" class="col-banner-img">
                             <a href="#" class="item item-thumb">
                                 <img src="images/product-detail/large/1.jpg" alt="">
                                 <div class="hover-banner"></div>
@@ -967,7 +1060,8 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                        class="col-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="section-tab text-center">
                             <div class="tab">
                                 <button class="tablinks active" onclick="openTab(event, 'tab1')" id="defaultOpen">Chăm
@@ -981,7 +1075,8 @@
                     </div>
                 </div>
 
-                <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" id="tab1" class="tabcontent product-list">
+                <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" id="tab1"
+                    class="tabcontent product-list">
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
                             <div class="product-image">
@@ -1158,314 +1253,9 @@
                     </div>
                 </div>
 
-                <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" id="tab2" class="row tabcontent product-list">
+                <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" id="tab2"
+                    class="row tabcontent product-list">
                     <div class="row">
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
-                            <div class="product-image">
-                                <a href="product-detail.html">
-                                    <img src="./images/1.jpg" alt="Aromatica Sea Daffodil Powder" class="img-thumbnail">
-                                    <div class="product-overlay"></div>
-                                </a>
-                                <div class="product-actions text-center clearfix">
-                                    <div class="product-actions-inner">
-                                        <div>
-                                            <button type="button" class="btnAddToCart add-to-cart">
-                                                <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
-                                            </button>
-                                        </div>
-
-                                        <div>
-                                            <button type="button" class="btnQuickView quick-view">
-                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                            </button>
-                                        </div>
-                                        <div>
-                                            <button type="button" class="btnBuyNow buy-now">
-                                                <span>Mua ngay</span>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="product-tags">
-                                    <div class="tag-saleoff text-center">
-                                        <span>-18%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-info text-center">
-                                <div class="product-title">
-                                    <a href="product-detail.html">Aromatica Sea Daffodil Powder</a>
-                                </div>
-                                <div class="product-price clearfix">
-                                    <span class="current-price">326,000₫</span>
-                                    <span class="original-price"><s>396,000₫</s></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
-                            <div class="product-image">
-                                <a href="product-detail.html">
-                                    <img src="./images/1.jpg" alt="Aromatica Sea Daffodil Powder" class="img-thumbnail">
-                                    <div class="product-overlay"></div>
-                                </a>
-                                <div class="product-actions text-center clearfix">
-                                    <div class="product-actions-inner">
-                                        <div>
-                                            <button type="button" class="btnAddToCart add-to-cart">
-                                                <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
-                                            </button>
-                                        </div>
-
-                                        <div>
-                                            <button type="button" class="btnQuickView quick-view">
-                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                            </button>
-                                        </div>
-                                        <div>
-                                            <button type="button" class="btnBuyNow buy-now">
-                                                <span>Mua ngay</span>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="product-tags">
-                                    <div class="tag-saleoff text-center">
-                                        <span>-18%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-info text-center">
-                                <div class="product-title">
-                                    <a href="product-detail.html">Aromatica Sea Daffodil Powder</a>
-                                </div>
-                                <div class="product-price clearfix">
-                                    <span class="current-price">326,000₫</span>
-                                    <span class="original-price"><s>396,000₫</s></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
-                            <div class="product-image">
-                                <a href="product-detail.html">
-                                    <img src="./images/1.jpg" alt="Aromatica Sea Daffodil Powder" class="img-thumbnail">
-                                    <div class="product-overlay"></div>
-                                </a>
-                                <div class="product-actions text-center clearfix">
-                                    <div class="product-actions-inner">
-                                        <div>
-                                            <button type="button" class="btnAddToCart add-to-cart">
-                                                <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
-                                            </button>
-                                        </div>
-
-                                        <div>
-                                            <button type="button" class="btnQuickView quick-view">
-                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                            </button>
-                                        </div>
-                                        <div>
-                                            <button type="button" class="btnBuyNow buy-now">
-                                                <span>Mua ngay</span>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="product-tags">
-                                    <div class="tag-saleoff text-center">
-                                        <span>-18%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-info text-center">
-                                <div class="product-title">
-                                    <a href="product-detail.html">Aromatica Sea Daffodil Powder</a>
-                                </div>
-                                <div class="product-price clearfix">
-                                    <span class="current-price">326,000₫</span>
-                                    <span class="original-price"><s>396,000₫</s></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
-                            <div class="product-image">
-                                <a href="product-detail.html">
-                                    <img src="./images/1.jpg" alt="Aromatica Sea Daffodil Powder" class="img-thumbnail">
-                                    <div class="product-overlay"></div>
-                                </a>
-                                <div class="product-actions text-center clearfix">
-                                    <div class="product-actions-inner">
-                                        <div>
-                                            <button type="button" class="btnAddToCart add-to-cart">
-                                                <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
-                                            </button>
-                                        </div>
-
-                                        <div>
-                                            <button type="button" class="btnQuickView quick-view">
-                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                            </button>
-                                        </div>
-                                        <div>
-                                            <button type="button" class="btnBuyNow buy-now">
-                                                <span>Mua ngay</span>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="product-tags">
-                                    <div class="tag-saleoff text-center">
-                                        <span>-18%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-info text-center">
-                                <div class="product-title">
-                                    <a href="product-detail.html">Aromatica Sea Daffodil Powder</a>
-                                </div>
-                                <div class="product-price clearfix">
-                                    <span class="current-price">326,000₫</span>
-                                    <span class="original-price"><s>396,000₫</s></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
-                            <div class="product-image">
-                                <a href="product-detail.html">
-                                    <img src="./images/1.jpg" alt="Aromatica Sea Daffodil Powder" class="img-thumbnail">
-                                    <div class="product-overlay"></div>
-                                </a>
-                                <div class="product-actions text-center clearfix">
-                                    <div class="product-actions-inner">
-                                        <div>
-                                            <button type="button" class="btnAddToCart add-to-cart">
-                                                <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
-                                            </button>
-                                        </div>
-
-                                        <div>
-                                            <button type="button" class="btnQuickView quick-view">
-                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                            </button>
-                                        </div>
-                                        <div>
-                                            <button type="button" class="btnBuyNow buy-now">
-                                                <span>Mua ngay</span>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="product-tags">
-                                    <div class="tag-saleoff text-center">
-                                        <span>-18%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-info text-center">
-                                <div class="product-title">
-                                    <a href="product-detail.html">Aromatica Sea Daffodil Powder</a>
-                                </div>
-                                <div class="product-price clearfix">
-                                    <span class="current-price">326,000₫</span>
-                                    <span class="original-price"><s>396,000₫</s></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" id="tab3" class="row tabcontent product-list">
-                    <div class="row">
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
-                            <div class="product-image">
-                                <a href="product-detail.html">
-                                    <img src="./images/1.jpg" alt="Aromatica Sea Daffodil Powder" class="img-thumbnail">
-                                    <div class="product-overlay"></div>
-                                </a>
-                                <div class="product-actions text-center clearfix">
-                                    <div class="product-actions-inner">
-                                        <div>
-                                            <button type="button" class="btnAddToCart add-to-cart">
-                                                <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
-                                            </button>
-                                        </div>
-
-                                        <div>
-                                            <button type="button" class="btnQuickView quick-view">
-                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                            </button>
-                                        </div>
-                                        <div>
-                                            <button type="button" class="btnBuyNow buy-now">
-                                                <span>Mua ngay</span>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="product-tags">
-                                    <div class="tag-saleoff text-center">
-                                        <span>-18%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-info text-center">
-                                <div class="product-title">
-                                    <a href="product-detail.html">Aromatica Sea Daffodil Powder</a>
-                                </div>
-                                <div class="product-price clearfix">
-                                    <span class="current-price">326,000₫</span>
-                                    <span class="original-price"><s>396,000₫</s></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
-                            <div class="product-image">
-                                <a href="product-detail.html">
-                                    <img src="./images/1.jpg" alt="Aromatica Sea Daffodil Powder" class="img-thumbnail">
-                                    <div class="product-overlay"></div>
-                                </a>
-                                <div class="product-actions text-center clearfix">
-                                    <div class="product-actions-inner">
-                                        <div>
-                                            <button type="button" class="btnAddToCart add-to-cart">
-                                                <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
-                                            </button>
-                                        </div>
-
-                                        <div>
-                                            <button type="button" class="btnQuickView quick-view">
-                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                            </button>
-                                        </div>
-                                        <div>
-                                            <button type="button" class="btnBuyNow buy-now">
-                                                <span>Mua ngay</span>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="product-tags">
-                                    <div class="tag-saleoff text-center">
-                                        <span>-18%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-info text-center">
-                                <div class="product-title">
-                                    <a href="product-detail.html">Aromatica Sea Daffodil Powder</a>
-                                </div>
-                                <div class="product-price clearfix">
-                                    <span class="current-price">326,000₫</span>
-                                    <span class="original-price"><s>396,000₫</s></span>
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
                             <div class="product-image">
                                 <a href="product-detail.html">
@@ -1684,7 +1474,315 @@
                     </div>
                 </div>
 
-                <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" id="tab4" class="row tabcontent product-list">
+                <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" id="tab3"
+                    class="row tabcontent product-list">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                            <div class="product-image">
+                                <a href="product-detail.html">
+                                    <img src="./images/1.jpg" alt="Aromatica Sea Daffodil Powder" class="img-thumbnail">
+                                    <div class="product-overlay"></div>
+                                </a>
+                                <div class="product-actions text-center clearfix">
+                                    <div class="product-actions-inner">
+                                        <div>
+                                            <button type="button" class="btnAddToCart add-to-cart">
+                                                <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                            </button>
+                                        </div>
+
+                                        <div>
+                                            <button type="button" class="btnQuickView quick-view">
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btnBuyNow buy-now">
+                                                <span>Mua ngay</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="product-tags">
+                                    <div class="tag-saleoff text-center">
+                                        <span>-18%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info text-center">
+                                <div class="product-title">
+                                    <a href="product-detail.html">Aromatica Sea Daffodil Powder</a>
+                                </div>
+                                <div class="product-price clearfix">
+                                    <span class="current-price">326,000₫</span>
+                                    <span class="original-price"><s>396,000₫</s></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                            <div class="product-image">
+                                <a href="product-detail.html">
+                                    <img src="./images/1.jpg" alt="Aromatica Sea Daffodil Powder" class="img-thumbnail">
+                                    <div class="product-overlay"></div>
+                                </a>
+                                <div class="product-actions text-center clearfix">
+                                    <div class="product-actions-inner">
+                                        <div>
+                                            <button type="button" class="btnAddToCart add-to-cart">
+                                                <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                            </button>
+                                        </div>
+
+                                        <div>
+                                            <button type="button" class="btnQuickView quick-view">
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btnBuyNow buy-now">
+                                                <span>Mua ngay</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="product-tags">
+                                    <div class="tag-saleoff text-center">
+                                        <span>-18%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info text-center">
+                                <div class="product-title">
+                                    <a href="product-detail.html">Aromatica Sea Daffodil Powder</a>
+                                </div>
+                                <div class="product-price clearfix">
+                                    <span class="current-price">326,000₫</span>
+                                    <span class="original-price"><s>396,000₫</s></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                            <div class="product-image">
+                                <a href="product-detail.html">
+                                    <img src="./images/1.jpg" alt="Aromatica Sea Daffodil Powder" class="img-thumbnail">
+                                    <div class="product-overlay"></div>
+                                </a>
+                                <div class="product-actions text-center clearfix">
+                                    <div class="product-actions-inner">
+                                        <div>
+                                            <button type="button" class="btnAddToCart add-to-cart">
+                                                <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                            </button>
+                                        </div>
+
+                                        <div>
+                                            <button type="button" class="btnQuickView quick-view">
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btnBuyNow buy-now">
+                                                <span>Mua ngay</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="product-tags">
+                                    <div class="tag-saleoff text-center">
+                                        <span>-18%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info text-center">
+                                <div class="product-title">
+                                    <a href="product-detail.html">Aromatica Sea Daffodil Powder</a>
+                                </div>
+                                <div class="product-price clearfix">
+                                    <span class="current-price">326,000₫</span>
+                                    <span class="original-price"><s>396,000₫</s></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                            <div class="product-image">
+                                <a href="product-detail.html">
+                                    <img src="./images/1.jpg" alt="Aromatica Sea Daffodil Powder" class="img-thumbnail">
+                                    <div class="product-overlay"></div>
+                                </a>
+                                <div class="product-actions text-center clearfix">
+                                    <div class="product-actions-inner">
+                                        <div>
+                                            <button type="button" class="btnAddToCart add-to-cart">
+                                                <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                            </button>
+                                        </div>
+
+                                        <div>
+                                            <button type="button" class="btnQuickView quick-view">
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btnBuyNow buy-now">
+                                                <span>Mua ngay</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="product-tags">
+                                    <div class="tag-saleoff text-center">
+                                        <span>-18%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info text-center">
+                                <div class="product-title">
+                                    <a href="product-detail.html">Aromatica Sea Daffodil Powder</a>
+                                </div>
+                                <div class="product-price clearfix">
+                                    <span class="current-price">326,000₫</span>
+                                    <span class="original-price"><s>396,000₫</s></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                            <div class="product-image">
+                                <a href="product-detail.html">
+                                    <img src="./images/1.jpg" alt="Aromatica Sea Daffodil Powder" class="img-thumbnail">
+                                    <div class="product-overlay"></div>
+                                </a>
+                                <div class="product-actions text-center clearfix">
+                                    <div class="product-actions-inner">
+                                        <div>
+                                            <button type="button" class="btnAddToCart add-to-cart">
+                                                <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                            </button>
+                                        </div>
+
+                                        <div>
+                                            <button type="button" class="btnQuickView quick-view">
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btnBuyNow buy-now">
+                                                <span>Mua ngay</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="product-tags">
+                                    <div class="tag-saleoff text-center">
+                                        <span>-18%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info text-center">
+                                <div class="product-title">
+                                    <a href="product-detail.html">Aromatica Sea Daffodil Powder</a>
+                                </div>
+                                <div class="product-price clearfix">
+                                    <span class="current-price">326,000₫</span>
+                                    <span class="original-price"><s>396,000₫</s></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                            <div class="product-image">
+                                <a href="product-detail.html">
+                                    <img src="./images/1.jpg" alt="Aromatica Sea Daffodil Powder" class="img-thumbnail">
+                                    <div class="product-overlay"></div>
+                                </a>
+                                <div class="product-actions text-center clearfix">
+                                    <div class="product-actions-inner">
+                                        <div>
+                                            <button type="button" class="btnAddToCart add-to-cart">
+                                                <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                            </button>
+                                        </div>
+
+                                        <div>
+                                            <button type="button" class="btnQuickView quick-view">
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btnBuyNow buy-now">
+                                                <span>Mua ngay</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="product-tags">
+                                    <div class="tag-saleoff text-center">
+                                        <span>-18%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info text-center">
+                                <div class="product-title">
+                                    <a href="product-detail.html">Aromatica Sea Daffodil Powder</a>
+                                </div>
+                                <div class="product-price clearfix">
+                                    <span class="current-price">326,000₫</span>
+                                    <span class="original-price"><s>396,000₫</s></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                            <div class="product-image">
+                                <a href="product-detail.html">
+                                    <img src="./images/1.jpg" alt="Aromatica Sea Daffodil Powder" class="img-thumbnail">
+                                    <div class="product-overlay"></div>
+                                </a>
+                                <div class="product-actions text-center clearfix">
+                                    <div class="product-actions-inner">
+                                        <div>
+                                            <button type="button" class="btnAddToCart add-to-cart">
+                                                <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                            </button>
+                                        </div>
+
+                                        <div>
+                                            <button type="button" class="btnQuickView quick-view">
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btnBuyNow buy-now">
+                                                <span>Mua ngay</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="product-tags">
+                                    <div class="tag-saleoff text-center">
+                                        <span>-18%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info text-center">
+                                <div class="product-title">
+                                    <a href="product-detail.html">Aromatica Sea Daffodil Powder</a>
+                                </div>
+                                <div class="product-price clearfix">
+                                    <span class="current-price">326,000₫</span>
+                                    <span class="original-price"><s>396,000₫</s></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" id="tab4"
+                    class="row tabcontent product-list">
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
                             <div class="product-image">
@@ -1910,7 +2008,8 @@
         <section class="home-news blog-content">
             <div class="container blog-single-item">
                 <div class="row">
-                    <div data-aos="fade-up" data-aos-duration="3000" class="col-sm-12 col-md-12 col-lg-12 home-section-title">
+                    <div data-aos="fade-up" data-aos-duration="3000"
+                        class="col-sm-12 col-md-12 col-lg-12 home-section-title">
                         <h3 class="title-type">Tin tức</h3>
                         <h2>Góc làm đẹp</h2>
                         <div class="line-bottom-title">
@@ -1920,7 +2019,7 @@
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-anchor-placement="top-center"  class="row blog-single-slider">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-center" class="row blog-single-slider">
                     <div id="home-news-slider">
                         <div class="item">
                             <div class="article-item">
@@ -2038,7 +2137,8 @@
         <section class="home-policy">
             <div class="container">
                 <div class="row">
-                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-sm-12 col-md-12 col-lg-4 item">
+                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                        class="col-sm-12 col-md-12 col-lg-4 item">
                         <div class="policy-item">
                             <div class="icon-policy">
                                 <div class="icon">
@@ -2051,7 +2151,8 @@
                             </div>
                         </div>
                     </div>
-                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="col-sm-12 col-md-12 col-lg-4 item">
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                        class="col-sm-12 col-md-12 col-lg-4 item">
                         <div class="policy-item">
                             <div class="icon-policy">
                                 <div class="icon">
@@ -2064,7 +2165,8 @@
                             </div>
                         </div>
                     </div>
-                    <div data-aos="fade-left"  data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-sm-12 col-md-12 col-lg-4 item">
+                    <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                        class="col-sm-12 col-md-12 col-lg-4 item">
                         <div class="policy-item">
                             <div class="icon-policy">
                                 <div class="icon">
@@ -2213,11 +2315,12 @@
         </div>
     </section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="vender/fancybox/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="vender/fancybox/js/jquery.fancybox-plus.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vender/fancybox/js/jquery.ez-plus.js"></script>
     <script type="text/javascript" src="vender/owlcarousel/js/owl.carousel.min.js"></script>
     <script src="vender/aos/js/aos.js"></script>
     <script type="text/javascript" src="js/beautiful-ladies.js"></script>

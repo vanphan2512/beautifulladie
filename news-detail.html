@@ -6,9 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="vender/font-awesome/css/font-awesome.css">
+    <!-- Main Stylesheets -->
     <link rel="stylesheet" href="css/index.css">
 
     <title>Beautiful Ladies</title>
@@ -965,88 +963,19 @@
         </div>
     </section>
 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="vender/fancybox/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="vender/fancybox/js/jquery.fancybox-plus.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        // menu mobile
-        $(document).on('click', '.btn-menu-mobile', function () {
-            $('body').addClass('pace-done sidebar-open').prepend('<div class="app-backdrop backdrop-sidebar"></div>');
-        });
-        $(document).on('click', '.backdrop-sidebar', function () {
-            $('body').removeClass('pace-done  sidebar-open');
-            $('.backdrop-sidebar').remove();
-        });
-        $(document).on('click', '.btn-close-menu', function () {
-            $('body').removeClass('pace-done  sidebar-open');
-            $('.backdrop-sidebar').remove();
-        });
-
-
-        // menu footer
-        $(document).on('click', '.menu-footer .menu-link', function () {
-            var $submenu = $(this).next('.footer-list');
-            if ($submenu.length < 1)
-                return;
-            if ($submenu.is(":visible")) {
-                $submenu.slideUp(function () {
-                    $('.menu-footer.open').removeClass('open');
-                });
-                $(this).removeClass('open');
-                return;
-            }
-
-            $('.menu-footer .footer-list:visible').slideUp();
-            $('.menu-footer .menu-link').removeClass('open');
-            $submenu.slideToggle(function () {
-                $('.menu-footer.open').removeClass('open');
-            });
-            $(this).addClass('open');
-        });
-
-        $(document).on('click', '.megamenu.has-sub .menu-item-link', function () {
-            var $submenu = $(this).next('.megamenu-menu');
-            if ($submenu.length < 1)
-                return;
-            if ($submenu.is(":visible")) {
-                $submenu.slideUp(function () {
-                    $('.megamenu.has-sub.open').removeClass('open');
-                });
-                $(this).removeClass('open');
-                return;
-            }
-
-            $('.megamenu.has-sub  .megamenu-menu:visible').slideUp();
-            $('.megamenu.has-sub .menu-item-link').removeClass('open');
-            $submenu.slideToggle(function () {
-                $('.megamenu.has-sub.open').removeClass('open');
-            });
-            $(this).addClass('open');
-        });
-
-
-        $(document).on('click', '.megamenu-menu .has-sub-sub .menu-item-link', function () {
-            var $submenu = $(this).next('.megamenu-menu');
-            if ($submenu.length < 1)
-                return;
-            if ($submenu.is(":visible")) {
-                $submenu.slideUp(function () {
-                    $('.megamenu-menu .has-sub-sub.open').removeClass('open');
-                });
-                $(this).removeClass('open');
-                return;
-            }
-
-            $('.megamenu-menu .has-sub-sub .megamenu-menu:visible').slideUp();
-            $('.megamenu-menu .has-sub-sub .menu-item-link').removeClass('open');
-            $submenu.slideToggle(function () {
-                $('.megamenu-menu .has-sub-sub.open').removeClass('open');
-            });
-            $(this).addClass('open');
-        });
-
-
-    </script>
+    <script type="text/javascript" src="vender/fancybox/js/jquery.ez-plus.js"></script>
+    <script type="text/javascript" src="vender/owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="vender/aos/js/aos.js"></script>
+    <script type="text/javascript" src="js/beautiful-ladies.js"></script>
+    
 </body>
 
 </html>

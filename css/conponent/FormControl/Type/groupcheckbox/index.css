@@ -1,0 +1,39 @@
+.form-group-checkbox {
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 35px; }
+  .form-group-checkbox label.form-check-label {
+    font-size: 13px;
+    color: #fff;
+    line-height: 1.5;
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    cursor: pointer; }
+    .form-group-checkbox label.form-check-label::before {
+      content: "\f00c";
+      font-size: 13px;
+      font-family: 'FontAwesome';
+      color: transparent;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 19px;
+      height: 19px;
+      border-radius: 2px;
+      background: #fff;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50); }
+  .form-group-checkbox input.form-check-input {
+    display: none; }
+    .form-group-checkbox input.form-check-input[type="checkbox"]:checked + .form-check-label::before {
+      color: #9b47f5; }

@@ -1,5 +1,6 @@
 .main.homepage {
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  overflow: hidden; }
   @media (max-width: 992px) {
     .main.homepage {
       overflow-x: hidden; } }
