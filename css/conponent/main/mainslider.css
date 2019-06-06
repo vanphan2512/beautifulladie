@@ -1,0 +1,21 @@
+.main-slider .owl-home-main-slider .owl-item .item a img {
+  width: 100%; }
+
+.main-slider .owl-home-main-slider .owl-controls {
+  margin-top: 0; }
+  .main-slider .owl-home-main-slider .owl-controls .owl-pagination {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 20px; }
+    .main-slider .owl-home-main-slider .owl-controls .owl-pagination .owl-page span {
+      width: 15px;
+      height: 15px;
+      background: #000;
+      opacity: 1;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    .main-slider .owl-home-main-slider .owl-controls .owl-pagination .owl-page.active span, .main-slider .owl-home-main-slider .owl-controls .owl-pagination .owl-page:hover span {
+      background: #9ea3ff; }

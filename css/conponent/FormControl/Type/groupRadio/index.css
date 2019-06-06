@@ -1,0 +1,10 @@
+.custom-radio {
+  clear: both; }
+  .custom-radio .custom-control-label {
+    vertical-align: middle;
+    line-height: 25px; }
+  .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+    border-color: #bd72ec;
+    background-color: #bd72ec; }
+  .custom-radio .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem #bd72ec; }

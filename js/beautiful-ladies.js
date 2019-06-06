@@ -433,6 +433,7 @@ $(function () {
         $formRegister.removeClass('move-left');
         $formSignIn.removeClass('move-left');
     });
+
     $overlay.on('click', function () {
         $(this).removeClass('visible');
         $mainPopUp.removeClass('visible');
@@ -460,4 +461,64 @@ $(function () {
     $('input').on('submit', function (e) {
         e.preventDefault(); //used to prevent submission of form...remove for real use
     });
+});
+
+
+// show giỏ hàng
+
+$(function () {
+    
+    var $overlay = $('.cart-overlay');
+    var $cartPopUp = $('.desktop-cart-wrapper .quickview-cart');
+    var $btnClose = $(".desktop-cart-wrapper .btnCloseQVCart");
+
+
+    $(".desktop-cart-wrapper > a").on('click', function () {
+        $cartPopUp.css('display', 'block');
+    });
+
+    $overlay.on('click', function () {
+        $(this).removeClass('open');
+        $cartPopUp.css('display', 'none');
+    });
+
+
+    $btnClose.on('click', function () {
+        $cartPopUp.css('display', 'none');
+    });
+
+})
+
+
+
+jQuery(document).ready(function() {
+	var offset = 220;
+    var duration = 500;
+    jQuery('#back-to-top').fadeOut(duration);
+	jQuery(window).scroll(function() {
+		if (jQuery(this).scrollTop() > offset) {
+			jQuery('#back-to-top').fadeIn(duration);
+		} else {
+			jQuery('#back-to-top').fadeOut(duration);
+		}
+	});
+
+	jQuery('#back-to-top').click(function(event) {
+		event.preventDefault();
+		jQuery('html, body').animate({
+			scrollTop: 0
+		}, duration);
+		return false;
+	});
+	window.onscroll = changePos;
+
+	function changePos() {
+		var header = $("#header");
+		var headerheight = $("#header").height();
+		if (window.pageYOffset > headerheight) {		
+			header.addClass('scrolldown');
+		} else {
+			header.removeClass('scrolldown');
+		}
+	}
 });

@@ -1,0 +1,42 @@
+.breadcrumb-wrapper.breadcrumb-img {
+  height: 300px;
+  padding: 30px 0;
+  background: url("../images/breadcrumb_bg2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  @media (max-width: 576px) {
+    .breadcrumb-wrapper.breadcrumb-img {
+      background-position: top left; } }
+  .breadcrumb-wrapper.breadcrumb-img .breadcrumb-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 100%; }
+    .breadcrumb-wrapper.breadcrumb-img .breadcrumb-content .breadcrumb-big h2 {
+      font-size: 24px;
+      font-weight: 800;
+      color: #fff;
+      padding: 0px;
+      margin: 0px 0px 5px 0px;
+      text-transform: uppercase; }
+    .breadcrumb-wrapper.breadcrumb-img .breadcrumb-content .breadcrumb-small a {
+      display: inline-block;
+      position: relative;
+      color: #fff;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .breadcrumb-wrapper.breadcrumb-img .breadcrumb-content .breadcrumb-small a:hover {
+        text-decoration: none; }
+    .breadcrumb-wrapper.breadcrumb-img .breadcrumb-content .breadcrumb-small span {
+      display: inline-block;
+      position: relative;
+      color: #fff;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }

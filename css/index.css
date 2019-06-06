@@ -10799,6 +10799,27 @@ body {
     color: #9ea3ff;
     outline: 1px solid #fff; }
 
+.back-to-top {
+  position: fixed;
+  bottom: 55px;
+  right: 15px;
+  height: 40px;
+  width: 40px;
+  opacity: 0.6;
+  background: #9ea3ff;
+  color: #fff;
+  text-align: center;
+  z-index: 99999;
+  cursor: pointer; }
+  .back-to-top i {
+    position: absolute;
+    top: 6px;
+    font-size: 27px;
+    width: 100%;
+    left: 0; }
+  .back-to-top:hover {
+    opacity: 1; }
+
 .header {
   z-index: 9999;
   box-shadow: 0px 0px 4.9px 0.1px rgba(4, 5, 5, 0.15);
@@ -10898,7 +10919,8 @@ body {
       overflow: hidden;
       visibility: hidden; } }
   .header-center .menu-top nav {
-    padding: 0; }
+    padding: 0;
+    float: left; }
     .header-center .menu-top nav .navbar-nav {
       display: inline-block;
       margin-right: 0 !important; }
@@ -10926,7 +10948,7 @@ body {
           @media (min-width: 1200px) {
             .header-center .menu-top nav .navbar-nav .menu-item a {
               font-size: 14px;
-              padding: 32px 25px;
+              padding: 32px 20px;
               webkit-transition: all 1s ease;
               -moz-transition: all 1s ease;
               transition: all 1s ease; } }
@@ -11018,6 +11040,73 @@ body {
                 z-index: 9999; }
         .header-center .menu-top nav .navbar-nav .menu-item:hover > ul {
           transform: perspective(600px) rotateX(0deg); }
+  .header-center .menu-top .cart-wrapper {
+    display: inline-block;
+    position: relative;
+    float: right;
+    line-height: 85px; }
+    .header-center .menu-top .cart-wrapper .cart {
+      position: relative;
+      color: #1b1b1b;
+      font-size: 18px;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .header-center .menu-top .cart-wrapper .cart .hd-cart-count {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        display: inline-block;
+        font-size: 12px;
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+        text-align: center;
+        color: #ffffff !important;
+        background: #1b1b1b;
+        border-radius: 50%; }
+      .header-center .menu-top .cart-wrapper .cart:hover {
+        color: #9ea3ff; }
+    .header-center .menu-top .cart-wrapper .quickview-cart {
+      overflow: hidden;
+      webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      display: none;
+      text-align: left;
+      position: absolute;
+      z-index: 99992;
+      top: 100%;
+      right: 0px;
+      width: 280px;
+      padding: 5px;
+      background: #fff;
+      line-height: normal !important;
+      -moz-box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.35);
+      -webkit-box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.35);
+      box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.35); }
+      .header-center .menu-top .cart-wrapper .quickview-cart h3 {
+        overflow: hidden;
+        padding: 5px;
+        text-transform: uppercase;
+        font-size: 12px;
+        width: 100%;
+        display: block;
+        background: #9ea3ff;
+        color: #fff;
+        position: relative; }
+        .header-center .menu-top .cart-wrapper .quickview-cart h3 span {
+          position: absolute;
+          color: #fff;
+          top: 5px;
+          right: 5px;
+          cursor: pointer; }
+      .header-center .menu-top .cart-wrapper .quickview-cart ul.no-product {
+        margin: 0px;
+        max-height: 250px;
+        padding-left: 0; }
+        .header-center .menu-top .cart-wrapper .quickview-cart ul.no-product li {
+          font-size: 14px; }
 
 body {
   position: relative; }
@@ -12710,6 +12799,21 @@ footer {
   visibility: hidden;
   transition: all .5s ease; }
   .overlay.visible {
+    opacity: 1;
+    visibility: visible; }
+
+.cart-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99991;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s ease; }
+  .cart-overlay.open {
     opacity: 1;
     visibility: visible; }
 

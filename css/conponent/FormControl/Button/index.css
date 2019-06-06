@@ -1,0 +1,33 @@
+form .form-submit button {
+  margin: 0 auto;
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s; }
+  form .form-submit button:hover {
+    text-decoration: none;
+    color: #fff;
+    outline: 0;
+    background: -webkit-linear-gradient(bottom, #7579ff82, #b224ef87);
+    background: -o-linear-gradient(bottom, #7579ff, #b224ef);
+    background: -moz-linear-gradient(bottom, #7579ff, #b224ef);
+    background: linear-gradient(bottom, #7579ff, #b224ef);
+    border: 0;
+    border-color: transparent; }

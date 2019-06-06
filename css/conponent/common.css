@@ -1,0 +1,99 @@
+body {
+  margin: 0 auto;
+  background: #ced3d3;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #767676;
+  -webkit-font-smoothing: antialiased; }
+  body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+    background-color: #fff; }
+  body::-webkit-scrollbar {
+    width: 8px;
+    background-color: #fff; }
+  body::-webkit-scrollbar-thumb {
+    background-color: #9ea3ff; }
+
+@font-face {
+  font-family: Calligraffitti_Regular;
+  src: url("../fonts/Calligraffitti-Regular.ttf"); }
+
+@font-face {
+  font-family: UTMLinotypeZapfinoKT;
+  src: url("../fonts/UTM-LinotypeZapfino-KT.ttf"); }
+
+.font-line {
+  font-family: "Arial" !important;
+  color: #fff;
+  font-size: 13px; }
+
+.no-bullets {
+  list-style: none outside;
+  margin-left: 0; }
+
+.btn-checkbox input[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: none;
+  border: 1px solid #dedede;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle; }
+  .btn-checkbox input[type="checkbox"]:checked:after {
+    content: '\2714';
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    display: block;
+    outline: none;
+    color: #9ea3ff;
+    outline: 1px solid #fff; }
+
+.btn-radio input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  background: none;
+  border: 1px solid #dedede;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  margin-right: 5px;
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+  .btn-radio input[type="radio"]:checked::after {
+    content: '\2714';
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    display: block;
+    outline: none;
+    color: #9ea3ff;
+    outline: 1px solid #fff; }
+
+.back-to-top {
+  position: fixed;
+  bottom: 55px;
+  right: 15px;
+  height: 40px;
+  width: 40px;
+  opacity: 0.6;
+  background: #9ea3ff;
+  color: #fff;
+  text-align: center;
+  z-index: 99999;
+  cursor: pointer; }
+  .back-to-top i {
+    position: absolute;
+    top: 6px;
+    font-size: 27px;
+    width: 100%;
+    left: 0; }
+  .back-to-top:hover {
+    opacity: 1; }
