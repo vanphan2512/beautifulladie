@@ -117,6 +117,94 @@
     </div>
     <!--.main-popup-->
 
+
+    <!-- Modal quick view-->
+
+    <div class="modal fade modal-quick-view" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-md-7 col-lg-7 product-images">
+                                <div class="product-images">
+                                    <div id="zoom-gallery" class="gallery product-gallery">
+                                        <a class="item" href="#" data-image="images/product-detail/large/1.jpg"
+                                            data-zoom-image="images/product-detail/large/1.jpg">
+                                            <img src="images/product-detail/large/1.jpg" />
+                                        </a>
+                                        <a class="item" href="#" data-image="images/product-detail/large/2.jpg"
+                                            data-zoom-image="images/product-detail/large/2.jpg">
+                                            <img src="images/product-detail/large/2.jpg" />
+                                        </a>
+                                        <a class="item" href="#" data-image="images/product-detail/large/3.jpg"
+                                            data-zoom-image="images/product-detail/large/3.jpg">
+                                            <img src="images/product-detail/large/3.jpg" />
+                                        </a>
+                                        <a class="item" href="#" data-image="images/product-detail/large/5.jpg"
+                                            data-zoom-image="images/product-detail/large/5.jpg">
+                                            <img src="images/product-detail/large/5.jpg" />
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5 col-lg-5 product-info">
+                                <h4 class="prpduct-title">Aromatica Sea Daffodil Aqua Gel Cream</h4>
+                                <p class="product-more-info">
+                                    <span class="product-sku">
+                                        Mã sản phẩm: <span>6KS15S0022</span>
+                                    </span>
+                                </p>
+                                <div class="form-input product-price-wrapper">
+                                    <div class="product-price">
+                                        <span class="p-price ">396,000₫</span>
+                                        <del>450,000₫</del>
+                                    </div>
+                                    <em class="PriceSaving">(Bạn đã tích kiệm được 54,000₫)</em>
+                                </div>
+                                <form action="" method="post" enctype="" class="form-vertical">
+                                    <div class="qty-addcart clearfix">
+                                        <p class="quantity-selector">Số lượng</p>
+                                        <div class="qty">
+                                            <button type="button" class="icon-fallback icon-fallback-minus">
+                                                <span class="icon icon-minus" aria-hidden="true"></span>
+                                                <span class="fallback-text" aria-hidden="true">−</span>
+                                                <span class="visually-hidden">Giảm số lượng sản phẩm đi 1</span>
+                                            </button>
+                                            <input type="text" class="qty-num" name="quantity">
+                                            <button type="button" class="icon-fallback icon-fallback-plus">
+                                                <span class="icon icon-plus" aria-hidden="true"></span>
+                                                <span class="fallback-text" aria-hidden="true">+</span>
+                                                <span class="visually-hidden">Tăng số lượng sản phẩm lên 1</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="btn-product-page">
+                                        <button type="submit" name="add" class="btn btn-add-product">Thêm vào
+                                            giỏ</button>
+                                        <button name="buy" id="buy-now" class="btn btn-add-product">Mua ngay</button>
+                                    </div>
+                                </form>
+
+                                <div class="qv-readmore">
+                                    <span> hoặc </span><a class="read-more" href="#" role="button">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <header id="header" class="header ">
         <div class="header-top">
             <div class="container">
@@ -817,7 +905,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -860,7 +949,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -903,7 +993,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -946,7 +1037,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -989,7 +1081,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -1116,7 +1209,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -1159,7 +1253,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -1202,7 +1297,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -1245,7 +1341,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -1294,7 +1391,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -1337,7 +1435,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -1380,7 +1479,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -1423,7 +1523,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -1466,7 +1567,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -1515,7 +1617,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -1558,7 +1661,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -1601,7 +1705,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -1644,7 +1749,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -1687,7 +1793,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -1730,7 +1837,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -1773,7 +1881,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -1822,7 +1931,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -1865,7 +1975,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -1908,7 +2019,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -1951,7 +2063,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -1994,7 +2107,8 @@
                                         </div>
 
                                         <div>
-                                            <button type="button" class="btnQuickView quick-view">
+                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
